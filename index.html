@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Legal Solution</title>
+        <!-- FlowBite Link -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css"
+            rel="stylesheet" />
+        <!-- Tailwind Link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+
+        <!-- Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/1f3975a7ed.js"
+            crossorigin="anonymous"></script>
+
+        <!-- Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet">
+            
+        <!-- Customizing Tailwind -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  },
+                  fontFamily: {
+                    garamond: ["EB Garamond", "serif"],
+                    poppins: ["Poppins", "sans-serif"],
+                  },
+                  backgroundImage: {
+                    card: "linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%)",
+                  }
+                }
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="container mx-auto mt-4 md:mt-14 md:w-2/3">
+            <!-- Navigation Menu -->
+            <nav class="px-2 sm:px-4 py-2.5 md:mx-10">
+                <div class="container flex flex-wrap items-center
+                    justify-between mx-auto">
+                    <img class="w-1/3 md:w-auto" src="images/Group 2.png"
+                        alt="Justice Legal Solution Logo">
+                    <div class="flex md:order-2">
+                        <button data-modal-target="defaultModal"
+                            data-modal-toggle="defaultModal" class="bg-[#B68C5A]
+                            rounded-lg py-3 px-5
+                            font-poppins md:text-lg text-white lg:py-5 lg:px-8
+                            lg:text-lg">Free Consultation</button>
+                        <button data-collapse-toggle="navbar-cta" type="button"
+                            class="inline-flex items-center p-2 text-sm
+                            text-gray-500 rounded-lg md:hidden hover:bg-gray-100
+                            focus:outline-none focus:ring-2 focus:ring-gray-200
+                            dark:text-gray-400 dark:hover:bg-gray-700
+                            dark:focus:ring-gray-600" aria-controls="navbar-cta"
+                            aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true"
+                                fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1
+                                    1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0
+                                    011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1
+                                    1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full
+                        md:flex md:w-auto md:order-1" id="navbar-cta">
+                        <ul class="flex flex-col p-4 mt-4 md:flex-row
+                            md:space-x-8
+                            md:mt-0 md:text-sm md:font-medium md:border-0
+                            font-poppins text-[#707070] bg-slate-900 rounded-lg
+                            md:bg-transparent">
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                About <i class="fa-solid fa-greater-than ml-2
+                                    w-auto"></i>
+                            </li>
+                            <li>
+                                Cases <i class="fa-solid fa-greater-than ml-2
+                                    w-auto"></i>
+                            </li>
+                            <li>
+                                Blog <i class="fa-solid fa-greater-than ml-2
+                                    w-auto"></i>
+                            </li>
+                            <li>
+                                Contact Us <i class="fa-solid fa-greater-than
+                                    ml-2 w-auto"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Modal -->
+            <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed
+                top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden
+                overflow-y-auto md:inset-0 h-modal md:h-full">
+                <div class="relative w-full h-full max-w-2xl md:h-auto">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow
+                        dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between p-4
+                            border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900
+                                dark:text-white">
+                                About Our Consultation
+                            </h3>
+                            <button type="button" class="text-gray-400
+                                bg-transparent hover:bg-gray-200
+                                hover:text-gray-900 rounded-lg text-sm p-1.5
+                                ml-auto inline-flex items-center
+                                dark:hover:bg-gray-600 dark:hover:text-white"
+                                data-modal-hide="defaultModal">
+                                <svg aria-hidden="true" class="w-5 h-5"
+                                    fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        fill-rule="evenodd" d="M4.293 4.293a1 1
+                                        0 011.414 0L10 8.586l4.293-4.293a1 1 0
+                                        111.414 1.414L11.414 10l4.293 4.293a1 1
+                                        0 01-1.414 1.414L10 11.414l-4.293
+                                        4.293a1 1 0 01-1.414-1.414L8.586 10
+                                        4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500
+                                dark:text-gray-400">
+                                A free consultation is a one-on-one interaction,
+                                conversation, meeting, or interview given freely
+                                to share one's thoughts and discuss possible
+                                opportunities of working together.
+                            </p>
+                            <p class="text-base leading-relaxed text-gray-500
+                                dark:text-gray-400">
+                                <span class="text-red-500">Unfortunately We are
+                                    not giving the free consultation right now.</span>
+                                We have some technical issues that preventing us
+                                from doing so. Hopefully we will start free
+                                consultation within a month. Hit us an email, we
+                                will notify you. Thank you.
+                            </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex items-center p-6 space-x-2 border-t
+                            border-gray-200 rounded-b dark:border-gray-600">
+                            <button data-modal-hide="defaultModal" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800
+                                focus:ring-4 focus:outline-none
+                                focus:ring-blue-300 font-medium rounded-lg
+                                text-sm px-5 py-2.5 text-center dark:bg-blue-600
+                                dark:hover:bg-blue-700
+                                dark:focus:ring-blue-800">I Understand</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Header Banner Section -->
+            <div class="container mx-auto mt-7 md:mt-20 rounded-lg text-center
+                relative">
+                <div class="absolute top-0 left-0 flex flex-col justify-center
+                    items-center h-full w-full">
+                    <h1 class="font-garamond text-white text-xl md:text-7xl
+                        mx-auto w-1/2 md:w-3/5">We Provide Effective Legal
+                        Solutions</h1>
+                    <p class="font-poppins text-[#E7E7E7] text-xs md:text-base
+                        mx-auto w-full md:w-3/5 pt-1 md:pt-5 pb-2 md:pb-9 px-2">There
+                        is
+                        no denying the fact that legal aspects are an integral
+                        part of our lives, right from buying a home, adopting a
+                        child, or even crossing the road.</p>
+
+                    <form class="flex items-center md:w-3/5 mx-auto gap-1
+                        md:gap-6 px-3">
+                        <label for="simple-search" class="sr-only">Search</label>
+                        <div class="relative w-full ">
+                            <input type="text" id="simple-search"
+                                class="block w-full p-2 md:p-4 rounded-lg
+                                font-poppins text-[#A0A0A0]" placeholder="Search your services"
+                                required>
+                        </div>
+                        <button type="submit" class="bg-[#B68C5A] rounded-lg
+                            py-2 px-5
+                            font-poppins md:text-lg text-white lg:py-4 lg:px-10
+                            lg:text-lg">Search
+                        </button>
+                    </form>
+
+                </div>
+                <img class="mx-auto" src="images/banner.png" alt="">
+            </div>
+
+        </header>
+
+        <main>
+            <!--  The Legal Practice Section -->
+            <section class="mt-10 md:mt-36 container mx-auto text-center
+                md:w-2/3">
+                <h1 class="font-garamond text-3xl md:text-5xl text-[#414040]">The
+                    Legal Practice Area</h1>
+                <p class="md:w-3/5 mx-auto text-[#707070] mt-3 md:mt-6 mb-6
+                    md:mb-16">From corporate law to tax law or the family law, find out about different practice areas and what areas you need us to succeed. We've got you covered.</p>
+                <div class="container grid grid-cols-1 md:grid-cols-3 md:px-12">
+                    <!-- 1st Item -->
+                    <div class="p-10 border-b border-[#E7E7E7] hover:bg-card mx-3 md:mx-0">
+                        <img class="mx-auto" src="images/Group 10.png" alt="">
+                        <h1 class="text-[#414040] font-garamond text-3xl mt-8
+                            mb-6">Business Law</h1>
+                        <p class="text-[#707070] font-poppins mb-8">In civil-law countries, company law consists of statute law; in common-law countries it consists partly of the ordinary rules of common law and equity and partly statute law. </p>
+                        <img class="mx-auto" src="images/Frame.png" alt="">
+                    </div>
+                    <!-- 2nd Item -->
+                    <div class="p-10 bg-card border border-[#E7E7E7] mx-3 md:mx-0">
+                        <img class="mx-auto" src="images/Group 15.png" alt="">
+                        <h1 class="text-[#414040] font-garamond text-3xl mt-8
+                            mb-6">Criminal Law</h1>
+                        <p class="text-[#707070] font-poppins mb-8">Criminal law is only one of the devices by which organized societies protect the security of individual interests and ensure the survival of the group. Check out our services.</p>
+                        <img class="mx-auto" src="images/Frame.png" alt="">
+                    </div>
+                    <!-- 3rd Item -->
+                    <div class="p-10 border-b border-[#E7E7E7] hover:bg-card mx-3 md:mx-0">
+                        <img class="mx-auto" src="images/layer1.png" alt="">
+                        <h1 class="text-[#414040] font-garamond text-3xl mt-8
+                            mb-6">Child Support</h1>
+                        <p class="text-[#707070] font-poppins mb-8">The Child Support Program provides custodial parents with assistance in obtaining financial support and medical insurance coverage for their children by locating parents.</p>
+                        <img class="mx-auto" src="images/Frame.png" alt="">
+                    </div>
+                    <!-- 4th Item -->
+                    <div class="p-10 hover:bg-card mx-3 md:mx-0">
+                        <img class="mx-auto" src="images/Group 12.png" alt="">
+                        <h1 class="text-[#414040] font-garamond text-3xl mt-8
+                            mb-6">Education Law</h1>
+                        <p class="text-[#707070] font-poppins mb-8">We work with schools, communities, governments and organisations around the world to ensure children are able to learn and play alongside their peers in pre-school.</p>
+                        <img class="mx-auto" src="images/Frame.png" alt="">
+                    </div>
+                    <!-- 5th Item -->
+                    <div class="p-10 border-x border-[#E7E7E7] hover:bg-card mx-3 md:mx-0">
+                        <img class="mx-auto" src="images/Group 16.png" alt="">
+                        <h1 class="text-[#414040] font-garamond text-3xl mt-8
+                            mb-6">Divorce Law</h1>
+                        <p class="text-[#707070] font-poppins mb-8">Divorce entails the reorganisation of the legal responsibilities of marriage by dissolving the bonds of marriage between a married couple under the rule of law of a country.</p>
+                        <img class="mx-auto" src="images/Frame.png" alt="">
+                    </div>
+                    <!-- 6th Item -->
+                    <div class="p-10 hover:bg-card mx-3 md:mx-0">
+                        <img class="mx-auto" src="images/Group 13.png" alt="">
+                        <h1 class="text-[#414040] font-garamond text-3xl mt-8
+                            mb-6">Tax Law</h1>
+                        <p class="text-[#707070] font-poppins mb-8">Our Tax Services Group assists corporations and individuals to safely maneuver their way through this system by providing effective tax planning of all necessary.</p>
+                        <img class="mx-auto" src="images/Frame.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Team (Extra Section) -->
+            <section class="mt-10 md:mt-36 container mx-auto text-center
+            md:w-2/3">
+            <h1 class="font-garamond text-3xl md:text-5xl text-[#414040]">Our Fearless Team</h1>
+            <p class="md:w-3/5 text-[#707070] mt-3 md:mt-6 mb-6
+                md:mb-16 mx-4 md:mx-auto">Let me present you the most attractive part of our firm. We believe in women empowerment. Here's the most powerful women in our team.</p>
+            <div class="container grid grid-cols-1 md:grid-cols-3 md:px-12 gap-5 ">
+                <div class="rounded-lg bg-[#F3F3F3] p-5 md:h-full items-center mx-4">
+                    <img class="rounded-lg mx-auto" src="images/lawyer 1.png" alt="">
+                    <h1 class="font-garamond text-3xl mt-4 mb-3">Sarah Jane</h1>
+                    <p class= "text-xs md:text-base font-poppins mb-5">Senior Lawyer</p>
+                </div>
+                <div class="rounded-lg bg-[#F3F3F3] p-5 md:h-full items-center mx-4">
+                    <img class="rounded-lg mx-auto" src="images/lawyer 3.png" alt="">
+                    <h1 class="font-garamond text-3xl mt-4 mb-3">Anna Maria</h1>
+                    <p class= "text-xs md:text-base font-poppins mb-5">Chief Lawyer</p>
+                </div>
+                <div class="rounded-lg bg-[#F3F3F3] p-5 md:h-full items-center mx-4">
+                    <img class="rounded-lg mx-auto" src="images/lawyer 4.png" alt="">
+                    <h1 class="font-garamond text-3xl mt-4 mb-3">Riley Rose</h1>
+                    <p class= "text-xs md:text-base font-poppins mb-5">Senior Lawyer</p>
+                </div>
+            </div>
+
+            </section>
+
+            <!-- What Our Clients Say Section -->
+            <section class="mt-10 md:mt-36 container mx-auto text-center
+                md:w-2/3">
+                <h1 class="font-garamond text-3xl md:text-5xl text-[#414040]">What
+                    Our Client Say</h1>
+                <p class="w-4/5 md:w-3/5 mx-auto text-[#707070] mt-3 md:mt-6
+                    mb-6
+                    md:mb-16">Our clients are our assets. We value individuals satisfaction to work with us. We make sure that you don't have to work with us again in a single cause.</p>
+
+                <div id="default-carousel" class="relative md:mx-12"
+                    data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-80 overflow-hidden rounded-lg
+                        md:h-96 mx-3 md:mx-0">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out"
+                            data-carousel-item>
+                            <img src="images/Rectangle 4.png"
+                                class="absolute inset-0 h-full w-full
+                                object-cover" alt="...">
+                            <div class="absolute bg-opacity-80 bg-[#111111]
+                                inset-0"></div>
+                            <div class="flex flex-col h-full items-center
+                                justify-center relative text-center">
+                                <img src="images/avatar.png" alt="">
+                                <div class="my-1 md:my-6 flex flex-col gap-1">
+                                    <h1 class="text-white font-garamond text-lg
+                                        md:text-2xl">Awlad Hossain</h1>
+                                    <p class="text-white text-xs md:text-base
+                                        font-poppins">UI/UX Designer</p>
+                                </div>
+                                <p class="text-[#F3F3F3] font-poppins w-2/3
+                                    text-[10px] md:text-base">I'm very happy that I got to know this firm at the most right time ever. They handled my case so easily that I can not express in my words. They are very professional in their area of expertise, I strongly recommend them. I liked their service very much. I wish all the best to this firm for their future.</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out"
+                            data-carousel-item>
+                            <img src="images/caro 2.jpg"
+                                class="absolute inset-0 h-full w-full
+                                object-cover" alt="...">
+                            <div class="absolute bg-opacity-80 bg-[#111111]
+                                inset-0"></div>
+                            <div class="flex flex-col h-full items-center
+                                justify-center relative text-center">
+                                <img src="images/avatar.png" alt="">
+                                <div class="my-1 md:my-6 flex flex-col gap-1">
+                                    <h1 class="text-white font-garamond text-lg
+                                        md:text-2xl">Karim Ahmed</h1>
+                                    <p class="text-white text-xs md:text-base
+                                        font-poppins">Businessman</p>
+                                </div>
+                                <p class="text-[#F3F3F3] font-poppins w-2/3
+                                    text-[10px] md:text-base">I'm very happy that I got to know this firm at the most right time ever. They handled my case so easily that I can not express in my words. They are very professional in their area of expertise, I strongly recommend them. I liked their service very much. I wish all the best to this firm for their future.</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out"
+                            data-carousel-item>
+                            <img src="images/caro 3.jpg"
+                                class="absolute inset-0 h-full w-full
+                                object-cover" alt="...">
+                            <div class="absolute bg-opacity-80 bg-[#111111]
+                                inset-0"></div>
+                            <div class="flex flex-col h-full items-center
+                                justify-center relative text-center">
+                                <img src="images/avatar.png" alt="">
+                                <div class="my-1 md:my-6 flex flex-col gap-1">
+                                    <h1 class="text-white font-garamond text-lg
+                                        md:text-2xl">Kawlad Karim</h1>
+                                    <p class="text-white text-xs md:text-base
+                                        font-poppins">EEE Engineer</p>
+                                </div>
+                                <p class="text-[#F3F3F3] font-poppins w-2/3
+                                    text-[10px] md:text-base">I'm very happy that I got to know this firm at the most right time ever. They handled my case so easily that I can not express in my words. They are very professional in their area of expertise, I strongly recommend them. I liked their service very much. I wish all the best to this firm for their future.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2
+                        bottom-5 left-1/2">
+                        <button type="button" class="w-10 h-1 bg-white"
+                            aria-current="false" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-10 h-1 bg-white"
+                            aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-10 h-1 bg-white"
+                            aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 flex
+                        items-center justify-center h-full px-4 cursor-pointer
+                        group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-8
+                            h-8 sm:w-10 sm:h-10">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white
+                                sm:w-6 sm:h-6 " fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30
+                        flex items-center justify-center h-full px-4
+                        cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-8
+                            h-8 sm:w-10 sm:h-10">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white
+                                sm:w-6 sm:h-6" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="mt-10 md:mt-36 container mx-auto text-center
+                md:w-2/3">
+                <h1 class="font-garamond text-3xl md:text-5xl text-[#414040]">Frequently
+                    Asked Any Questions</h1>
+                <p class="w-4/5 md:w-3/5 mx-auto text-[#707070] mt-3 md:mt-6
+                    mb-6
+                    md:mb-16">Here's the answer that has been asked by Jhankar Mahub vai in the video. I answered them all as I took notes right in time. Let me know if the answers are correct or not.</p>
+                <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto gap-8 md:px-12">
+                    <!-- FAQ -->
+                    <div id="accordion-collapse" data-accordion="collapse" data-active-classes="bg-white" class="mx-3 md:mx-0">
+                        <!-- 1st Question -->
+                        <div class="mb-2 md:mb-7 bg-[#F3F3F3] rounded-lg">
+                            <h2 id="accordion-collapse-heading-1">
+                                <button type="button" class="flex items-center
+                                    justify-between w-full p-5 font-extrabold font-garamond text-lg md:text-2xl text-left
+                                    text-[#414040] bg-[#F3F3F3] rounded-lg"
+                                    data-accordion-target="#accordion-collapse-body-1"
+                                    aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1">
+                                    <span>1. Difference Between FlexBox and Grid.</span>
+                                    <svg data-accordion-icon class="w-6 h-6
+                                        rotate-180 shrink-0" fill="#414040"
+                                        viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd" d="M5.293 7.293a1 1
+                                            0 011.414 0L10 10.586l3.293-3.293a1 1 0
+                                            111.414 1.414l-4 4a1 1 0 01-1.414
+                                            0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path></svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="p-5 font-normal rounded-lg text-left">
+                                    <div class="text-[#707070] font-poppins text-sm md:text-base space-y-2 gap-2">
+                                        <p class="mb-2">Flexbox is designed for one-dimensional layouts, and Grid for two-dimensional layouts.</p>
+                                        <p class="mb-2">Grid: Grid focuses on content placement. It prioritize layout first. It provides a mechanism to divide available viewport for layout into column and rows. Each item can be positioned anywhere in a grid cell.</p>
+                                        <p>FlexBox: It focuses on content flow, also prioritize content first. Widths or heights of flex items are determined by the content of the item. In flexbox, spacing and aligning items are flexible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd Question -->
+                        <div class="mb-2 md:mb-7 bg-[#F3F3F3] rounded-lg">
+                            <h2 id="accordion-collapse-heading-2">
+                                <button type="button" class="flex items-center
+                                justify-between w-full p-5 font-extrabold font-garamond text-lg md:text-2xl text-left
+                                text-[#414040] bg-[#F3F3F3] rounded-lg"
+                                    data-accordion-target="#accordion-collapse-body-2"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2">
+                                    <span>2. What is the purpose of media query?</span>
+                                    <svg data-accordion-icon class="w-6 h-6
+                                        shrink-0" fill="#414040" viewBox="0 0
+                                        20 20" xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd" d="M5.293 7.293a1 1
+                                            0 011.414 0L10 10.586l3.293-3.293a1 1 0
+                                            111.414 1.414l-4 4a1 1 0 01-1.414
+                                            0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path></svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="p-5 font-normal rounded-lg text-left">
+                                    <div class="text-[#707070] font-poppins text-sm md:text-base space-y-2 gap-2">
+                                        <p class="mb-2">Media query is the key part of responsive design. They allow us tto create different layouts depending on the size of the viewport. It is used to check width and height of the viewport. Also it is used to check orientation whether is the tablet/phone in landscape or portrait mode!</p>
+                                        <p>Media queries allow us to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd Question -->
+                        <div class="mb-2 md:mb-7 bg-[#F3F3F3] rounded-lg">
+                            <h2 id="accordion-collapse-heading-3">
+                                <button type="button" class="flex items-center
+                                justify-between w-full p-5 font-extrabold font-garamond text-lg md:text-2xl text-left
+                                text-[#414040] bg-[#F3F3F3] rounded-lg"
+                                    data-accordion-target="#accordion-collapse-body-3"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3">
+                                    <span>3. What is CSS Box Model? and How does it work?</span>
+                                    <svg data-accordion-icon class="w-6 h-6
+                                        shrink-0" fill="#414040" viewBox="0 0
+                                        20 20" xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd" d="M5.293 7.293a1 1
+                                            0 011.414 0L10 10.586l3.293-3.293a1 1 0
+                                            111.414 1.414l-4 4a1 1 0 01-1.414
+                                            0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path></svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div class="p-5 font-normal rounded-lg text-left">
+                                    <div class="text-[#707070] font-poppins text-sm md:text-base space-y-2 gap-2 flex flex-col-reverse">
+                                        <img src="images/box_model.png" alt="">
+                                        <div>
+                                            <p class="mb-2">A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model describes how these elements work together to create a box as displayed by CSS.</p>
+                                            <p>Explanation of the different parts:
+                                                <ul>
+                                                    <li>Content - The content of the box, where text and images appear</li>
+                                                    <li>Padding - Clears an area around the content. The padding is transparent</li>
+                                                    <li>Border - A border that goes around the padding and content</li>
+                                                    <li>Margin - Clears an area outside the border. The margin is transparent</li>
+                                                </ul>    
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4th Question -->
+                        <div class="mb-2 md:mb-7 bg-[#F3F3F3] rounded-lg">
+                            <h2 id="accordion-collapse-heading-4">
+                                <button type="button" class="flex items-center
+                                justify-between w-full p-5 font-extrabold font-garamond text-lg md:text-2xl text-left
+                                text-[#414040] bg-[#F3F3F3] rounded-lg"
+                                    data-accordion-target="#accordion-collapse-body-4"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>4. What is Semantic Tags?</span>
+                                    <svg data-accordion-icon class="w-6 h-6
+                                        shrink-0" fill="#414040" viewBox="0 0
+                                        20 20" xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd" d="M5.293 7.293a1 1
+                                            0 011.414 0L10 10.586l3.293-3.293a1 1 0
+                                            111.414 1.414l-4 4a1 1 0 01-1.414
+                                            0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path></svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+                                <div class="p-5 font-normal rounded-lg text-left">
+                                    <p class="mb-2 text-[#707070] font-poppins">A semantic element clearly describes its meaning to both the browser and the developer. Semantic tag offers us a better user experience. The pages made with semantic elements are much easier to read. Also, The semantic tags help the search engines and other user devices to determine the importance and context of web pages.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div>
+                        <img src="images/Framee.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacts Section -->
+            <section class="mt-10 md:mt-36 container mx-auto text-center
+            md:w-2/3">
+            <h1 class="font-garamond text-3xl md:text-5xl text-[#414040]">Contact With Us</h1>
+            <p class="md:w-3/5 mx-2 md:mx-auto text-[#707070] mt-3 md:mt-6 mb-6
+                md:mb-16">If you are facing any troublesome situation that might do something with law, feel free to contact with us. We can discuss about the matter.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-3 md:mx-12">
+                <!-- Contact Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="py-12 bg-[#F3F3F3] border-b border-r">
+                        <img class="mx-auto" src="images/address.png" alt="">
+                        <h1 class="font-garamond md:text-2xl text-lg my-2 md:my-4 text-[#414040]">Address</h1>
+                        <p class="text-[#707070] text-sm md:text-base font-poppins w-3/5 mx-auto">A108 Adam Street,<br>
+                            New York, NY 535022</p>
+                    </div>
+                    <div class="py-12 bg-[#F3F3F3] border-b">
+                        <img class="mx-auto" src="images/call.png" alt="">
+                        <h1 class="font-garamond md:text-2xl text-lg my-2 md:my-4 text-[#414040]">Call Us</h1>
+                        <p class="text-[#707070] text-sm md:text-base font-poppins w-3/5 mx-auto">+88 01750 00 00 00<br>
+                            +88 01750 00 00 00</p>
+                    </div>
+                    <div class="py-12 bg-[#F3F3F3] border-b border-r">
+                        <img class="mx-auto" src="images/email.png" alt="">
+                        <h1 class="font-garamond md:text-2xl text-lg my-2 md:my-4 text-[#414040]">Email Us</h1>
+                        <p class="text-[#707070] text-sm md:text-base font-poppins w-3/5 mx-auto">info@gmail.com<br>
+                            info@gmail.com</p>
+                    </div>
+                    <div class="py-12 bg-[#F3F3F3] border-b">
+                        <img class="mx-auto" src="images/time.png" alt="">
+                        <h1 class="font-garamond md:text-2xl text-lg my-2 md:my-4 text-[#414040]">Working Hours</h1>
+                        <p class="text-[#707070] text-sm md:text-base font-poppins w-3/5 mx-auto">Mon-Fri: 9AM to 5PM<br>
+                            Sunday: 9AM to 1 PM</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div>
+                    <form class="flex flex-col space-y-8 ">
+                        <input type="text" name="Name" id="" placeholder="Name" class="bg-[#F3F3F3] rounded-lg border-none p-6 font-poppins">
+                        <input type="email" name="email" id="" placeholder="Your Email" class="bg-[#F3F3F3] rounded-lg border-none p-6 font-poppins">
+                        <input type="text" name="Subject" id="" placeholder="Subject" class="bg-[#F3F3F3] rounded-lg border-none p-6 font-poppins">
+                        <textarea rows="5" cols="30" class="bg-[#F3F3F3] rounded-lg border-none p-6 font-poppins" placeholder="Your Message"></textarea>
+                        <input type="button" value="Send Message" class="rounded-lg border-none p-5 bg-[#B68C5A] text-white text-base md:text-xl font-semibold font-poppins">
+                    </form>
+                </div>
+            </div>
+            
+            </section>
+        </main>
+
+        <footer class="mt-10 md:mt-36 bg-[#111111]">
+            <!-- Footer -->
+            <div class="container mx-auto text-left
+            md:w-2/3 ">
+                <div class="grid grid-cols-1 md:grid-cols-4 md:mx-12 pt-28 pb-28 gap-14">
+                    <div class="w-2/3 mx-auto md:w-full">
+                        <div>
+                            <img src="images/Group 37.png" alt="">
+                            <p class="text-[#CFCFCF] mt-8 font-poppins">We are not the best firm in the country, but no firm can match the level of our dedication in every cases that we took. We are waiting to hear from you.</p>
+                        </div>
+                    </div>
+                    <div class="w-2/3 mx-auto md:w-full">
+                        <h1 class="text-white font-garamond text-2xl">Useful Link</h1>
+                        <ul class="text-[#CFCFCF] mt-4 md:mt-11 space-y-4">
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Cases</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="w-2/3 mx-auto md:w-full">
+                        <h1 class="text-white font-garamond text-2xl">Contact Now</h1>
+                        <ul class="text-[#CFCFCF] mt-4 md:mt-11 space-y-4">
+                            <li>555 4th 5t NW, Washington<br> 
+                                DC 20530, United States</li>
+                            <li>+88 01750 000 000
+                             <br>   +88 01750 000 000</li>
+                            <li>info@gmail.com<br> 
+                                info@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="w-2/3 mx-auto md:w-full">
+                        <h1 class="text-white font-garamond text-2xl">Subscribe</h1>
+                        <p class="text-[#CFCFCF] mt-4 md:mt-11 font-poppins">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
+                        <form class="flex pt-6">
+                            <input type="text" placeholder="Email Address" class="p-4 rounded-lg">
+                            <button class="p-5 bg-[#B68C5A] rounded-lg"><i class="fa-regular fa-paper-plane text-white"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- FlowBite Link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+    </body>
+</html>
